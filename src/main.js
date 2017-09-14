@@ -8,7 +8,6 @@ import locale from 'element-ui/lib/locale/lang/en'
 import 'element-ui/lib/theme-default/index.css'
 import './style/comment.less'
 
-
 Vue.use(ElementUI, { locale })
 Vue.config.productionTip = false
 
