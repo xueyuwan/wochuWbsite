@@ -40,7 +40,7 @@
                 <p>{{item.title}}</p>
                 <p>{{item.originalPrice}}</p>
                 <p>{{item.presentPrice}}</p>
-                <div><img src="./../images/addcart.png" alt=""></div>
+                <div><img src="./../images/addcart.png" alt="" v-on:click="addToCart"></div>
               </el-col>
 
             </el-row>
@@ -63,7 +63,7 @@
                 <p>{{item.title}}</p>
                 <p>{{item.originalPrice}}</p>
                 <p>{{item.presentPrice}}</p>
-                <div><img src="./../images/addcart.png" alt=""></div>
+                <div><img src="./../images/addcart.png" alt="" v-on:click="addToCart"></div>
               </el-col>
 
             </el-row>
@@ -105,6 +105,11 @@ export default {
         { "img": pic7, "title": "小青菜350g", "originalPrice": "3.99", "presentPrice": "1.99" },
         { "img": pic8, "title": "小青菜350g", "originalPrice": "3.99", "presentPrice": "1.99" },
       ]
+    }
+  },
+  methods:{
+    addToCart:function(){
+       console.log("111");
     }
   }
 }

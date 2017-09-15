@@ -241,8 +241,8 @@
 }
 
 .footer dl:first-child {
-  width: 206px;
-  float: left;
+  width:206px;
+  float:left;
   margin-left: 5px;
   display: inline;
 }
