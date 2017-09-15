@@ -46,8 +46,30 @@
             </el-row>
           </div>
         </div>
-      </div>
+        <p class="tj-tile">
+          <a><img src="https://wochu.oss-cn-hangzhou.aliyuncs.com/upload/58e5f698-542a-4faa-afeb-b680b158afd6.jpg"></a>
+        </p>
+        <div class="goodsList clear">
+          <div class="goodsLeft left">
+            <img src="./../images/goods-l.jpg" alt="">
+            <p>
+              <a href="">更多 >></a>
+            </p>
+          </div>
+          <div class="goodsRight right">
+            <el-row>
+              <el-col v-for="item in goods" class="goods-item" :span="6">
+                <img :src="item.img" alt="">
+                <p>{{item.title}}</p>
+                <p>{{item.originalPrice}}</p>
+                <p>{{item.presentPrice}}</p>
+                <div><img src="./../images/addcart.png" alt=""></div>
+              </el-col>
 
+            </el-row>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -95,7 +117,6 @@ export default {
     height: 500px;
   }
 }
-
 .contentBox {
   width: 1280px;
   margin: 0 auto;
@@ -139,13 +160,14 @@ export default {
             width: 100%;
             height: 224px;
           }
-          div {
+          div{
             position: absolute;
             right: 10px;
             bottom: 10px;
             width: 36px;
             height: 36px;
             img {
+              cursor: pointer;
               width: 36px;
               height: 36px;
             }
